@@ -107,3 +107,47 @@
     bottom: 0;
     left: 0;
 }
+
+
+/**************************** SECOND SECTION CSS ****************************/
+
+.second{
+    margin-top: 200px;
+    display: flex;
+}
+
+.second .left{
+    
+}
+
+.second span{
+    font-style: italic;
+    color: #ea983e;
+}
+
+.second .heading{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #ea983e;
+    margin-left: 70px;
+}
+
+.second .para{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+button{
+    background-color: #ea983e;
+    color: #ffffff;
+    border: none;
+    padding: 15px 7px;
+    font-size: 20px;
+    margin-top: 65px;
+    margin-left: 70px;
+}
+
+.second .brain-img{
+    
+}
