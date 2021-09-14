@@ -10,30 +10,31 @@
 /********************* NAVBAR CSS ******************/
 
 .navbar{
-    margin-top: 20px;
-    height: 15vh;
+    margin-top: 40px;
+
     width: 100%;
     background: #ffffff;
-    box-shadow: 0, 2px, 5px, #00000029;
+
+    box-shadow: 0 2px 5px #00000029;
 }
 
 .navbar img{
-    margin: 0;
-    padding: 0;
-    height: 95px;
-    width: 140px;
+    height: 120px;
+    width: 175px;
     padding: 13px 20px;
-    margin-right: 30px;
+    margin-left: 50px;
 
 }
 
 .navbar a{
-    color: #212529;
+    color: #626262;
     text-decoration: none;
     float: right;
-    padding: 25px;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 19px;
+    text-align: left;
+    padding-top: 45px;
+    padding-right: 50px;
 }
 
 .navbar a:hover{
@@ -41,13 +42,13 @@
 }
 
 .first-section img{
-    position: relative;
+position: absolute;
 }
 
 .first-section .left-side-content{
     width: 50%;
-    position: absolute;
-    top: 80vh;
+    position: relative;
+
     background: transparent;
     background-color: #ffffff;
 
@@ -59,12 +60,21 @@
     width: 50%;
     font-weight: lighter;
     letter-spacing: normal;
+    margin-left: 40px;
 }
 
 .first-section .left-side-content .sub-heading{
     color: #ea983e;
     font-size: 40px;
     font-weight: bolder;
+    margin-top: 20px;
+}
+
+.first-section .left-side-content .sub-heading2{
+    font-weight: normal;
+    font-size: 40px;
+    color: #626262;
+    text-align: left;
 }
 
 .first-section .left-side-content iframe{
