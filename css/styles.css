@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/********************* NAVBAR CSS ******************/
+
+.navbar{
+    margin-top: 20px;
+    height: 15vh;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0, 2px, 5px, #00000029;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar img{
+    height: 95px;
+    width: 140px;
+
+}
+
+.navbar a{
+    color: #212529;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: blue;
+}
+
+.first-section img{
+    position: relative;
+}
+
+.first-section .left-side-content{
+    position: absolute;
+    top: 80vh;
+    background: transparent;
+    background-color: #ffffff;
+
+}
+
+.first-section .left-side-content h1{
+    color: #626262;
+}
