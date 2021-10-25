@@ -8,14 +8,34 @@
 
     <!-- link for css -->
     <link rel="stylesheet" href="css/styles.css">
+        
+    <!-- link for css modal assumptions -->
+    <link rel="stylesheet" href="css/modal-video.min.css">
 
     <!-- link for favicon-->
     <link rel="icon" href="web13/Ear Brain Health Logo.png">
 
+    <!-- link for social media icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <!-- link for font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!--  bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--  bootstrap  -->
+    <link rel="stylesheet" css="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+
+    <!-- icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- cdn link for magnific popup js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js">
+
 </head>
 <body>
 
@@ -24,48 +44,57 @@
         <!-- navbar -->
         <div class="navbar">
             <img src="web13/Ear Brain Health Logo.png">
-            <a href="#"><strong>FIND AN AUDIOLOGIST</strong></a>
+            <a href="search.html"><strong>FIND AN AUDIOLOGIST</strong></a>
         </div>
 
-        <div class="first-section">
-            <img src="images/Background blurr (entire page).png">
+        <!--Section 1-->
+        <div class="container1">
+         <div class="first-section">
+            <!--<img class="section1" src="images/HomeMotherDaughter.png">-->
 
             <!--left side section-->
             <div class="left-side-content">
                 <p class="heading"> Hearing Loss Can Impact Your Cognitive Health</p>
-                <p class="sub-heading">The Audiologist is your<br> partner in cognitive health</p>
+                <p class="sub-heading">The Audiologist is your<br> partner in cognitive health.</p>
 
-                <div class="video-subheading">
-                    <iframe width="360" height="115" src="https://www.youtube.com/embed/FTo73s5VDA0" title="YouTube video player" 
-                    frameborder="0" allowfullscreen></iframe>
-
-                    <p class="sub-heading2">As seen on the <br>Balancing Act</p>
-                
-                </div>
-                <div class="gradient"></div>
-                
+                <div class="balancing-act" id="modal">
+                    <img src="web13/Screen Shot 2020-09-11 at 11.37.55 AM.png" alt="balancing-act">
+                    <!-- <a class="modal-video-eg" href="https://www.youtube.com/watch?v=FTo73s5VDA0&t=1s" data-video-id="FTo73s5VDA0&t"> -->
+                        <div class="circle" data-toggle="modal"></div>
+                        <div class="triangle" data-toggle="modal">
+                          <div >
+                            <a  id="videoPopup" href="https://www.youtube.com/watch?v=FTo73s5VDA0&t=1s"></a>
+                          </div>
+                        </div> 
+                    </a>                       
+                    <p class="sub-heading2">As seen on the <br>Balancing Act!</p>    
+                </div>                
             </div>
-
-
+         </div>
         </div>
+        <div class="clear"></div>
+        <div class="gradient"></div>
+        
     </div>
+    
 
     <!--  SECOND SECTION-->
     <div class="second">
+        
 
         <!--Right side section-->
         <div class="left">
             <p class="heading">The Relationship between Hearing Loss and Cognitive Decline</p>
             <p class="para">The slow onset of hearing loss can <span>have significant impact on several key brain functions</span>, 
-                including the memory, hearing, speech and language portions of cognition.<br><br>
-                When an audiologist effectively manages a patient's hearing loss, they also help to reduce 
+                including the memory, hearing, speech and language portions of cognition.
+            <p class="para">When an audiologist effectively manages a patient's hearing loss, they also help to reduce 
                 social withdrawal and isolation. Some of the benefits of hearing loss management are improved communication, 
-                less cognitive effort, less fatigue at the end of the day and an overall better quality of life for the patient.<br><br>
-                Research suggests that hearing impairment is a risk factor for cognitive decline. In fact, according to 
+                less cognitive effort, less fatigue at the end of the day and an overall better quality of life for the patient.</p>
+            <p class="para">Research suggests that hearing impairment is a risk factor for cognitive decline. In fact, according to 
                 <a href="https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2930367-6">a landmark Lancet report</a> 
                 , hearing impairment is the #1 most <i>modifiable</i> risk factor for cognitive decline.</p>
 
-            <button>FIND AN AUDIOLOGIST TODAY!</button>
+            <button type="button" onclick="location.href='search.html'">FIND AN AUDIOLOGIST TODAY!</button>
         </div>
 
         <!--Left side section-->
@@ -73,7 +102,261 @@
             <img src="web13/Group 35.png">
         </div>
     </div>
+    l̥<div class="clear"></div>
 
 
+    <!--  THIRD SECTION-->
+    <div class="third">
+
+        <!-- Left side -->
+        <div class="third-left-side">
+            <p >Ear to Brain Connection</p>
+            <img src="web13/Brain Gears.png"><br>
+            <button type="button" onclick="location.href='search.html'">FIND AN AUDIOLOGIST TODAY!</button>
+
+        </div>
+        <!-- Right side -->
+        <div class="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/Speed Processing_1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Speed Processing_2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Speed Processing_3.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Speed Processing_4.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/Speed Processing_5.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+    l̥<div class="clear"></div>
+
+    <!-- Fourth Section-->
+    <div class="four">
+
+        <!-- left-side -->
+        <div class="left-carousel">
+            <div class="carousel">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="first-div">
+                            <h3>American Academy of Nueorology</h3>
+                            <p>MCI is clinically important, but often not recognized. Cognitive impairment is a dominant comorbidity influencing not only what care is 
+                                recommended for that problem, but also how care for all other illnesses should be provided.</p>
+                            <img src="imagetes/neurology.jpg">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="second-div">
+                            <h3>WHO Guidelines 2019</h3>
+                            <p>Promote cognitive health through early diagnosis & management of risk factors</p>
+                            <img src="imagetes/who.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="third-div">
+                            <h3>ADA Clinical Practice Recommendations 2019</h3>
+                            <p>Poor glycemic control is associated with a decline in cognitive function. 
+                                Early cognitive function evaluation leads to improved quality of care.</p>
+                            <img src="imagetes/ada.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="fourth-div">
+                            <h3>Alzheimer’s Association</h3>
+                            <p>Early detection and diagnosis of Alzheimer’s and other dementias helps those with 
+                                the disease achieve better quality care by identifying cognitive impairment as early as possible.</p>
+                            <img src="imagetes/testm2.png">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="fifth-div">
+                            <h3>CDC Healthy Brain Initiative 2018-2023</h3>
+                            <p>Opportunities for maintaining optimal cognitive health are growing as we gain a better understanding of cognitive decline risk factors. 
+                                The public health community should embrace cognitive health as a priority and invest in its promotion.</p>
+                            <img src="imagetes/cdchealyh.png">
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+
+        <!-- Right-side -->
+        <div class="right">
+            <h1>Major Health Organizations
+                Urge Early
+                Detection</h1>
+
+            <a href="search.html">FIND AN AUDIOLOGIST TODAY!</a>
+        </div>
+
+    </div>
+    l̥<div class="clear"></div>
+
+    <!-- Fifth section -->
+    <div class="five">
+
+        <!-- Left-side -->
+        <div class="left">
+            <p class="five-heading">The Cognivue Thrive™ Screening</p>
+            <br>
+            <p>The Cognivue Thrive screening process takes only 5-10 minutes and immediately reveals your cognitive performance results.</p>
+            <br>
+            <p>This is not a diagnostic tool and does not screen for Alzheimer's disease or other dementias. 
+               Rather, it is the perfect tool for your Audiologist to measure your cognitive performance as it relates to your hearing loss.</p>
+            <br>
+            <div class="sub-division">
+                <img src="images/Gen4Picture_Thrive.png">
+                <ul>
+                    <li>5-10 minutues to complete</li>
+                    <li>Easy to take</li>
+                    <li>Not an IQ test</li>
+                    <li>Adjusts to your unique visual and motor skill abilities</li>
+                    <li>Provides your Audiologist with important information to better attend to your hearing needs</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right-side -->
+        <div class="right">
+            <h1>What to expect:</h1>
+            <div class="welcome-video">
+                <img src="web13/Screen Shot 2020-09-11 at 11.54.54 AM.png" alt="welcome-video">
+                <a href="https://www.youtube.com/watch?v=ZXvJLJTh704&t=1s">
+                    <div class="circle"></div>
+                    <div class="triangle"></div>
+                </a>
+
+            </div>
+
+            <button type="button" onclick="location.href='search.html'">FIND AN AUDIOLOGIST TODAY!</button>
+        </div>
+    </div>
+    l̥<div class="clear"></div>
+
+    <!-- Sixth section -->
+    <div class="six" >
+        <div class="six-sub-section">
+            <h1>Hearing loss may contribute to cognitive decline.<sup>1,2,3,4</sup></h1>
+            <h4>Your Audiologist now offers cognitive screening. This is a personalized 
+                way to receive an overall screening of your cognitive health. Easy. Fast. Reliable.</h4>
+
+            <button class="six-button" type="button" onclick="location.href='search.html'">FIND AN AUDIOLOGIST TODAY!</button>
+        </div>
+    </div>
+    l̥<div class="clear"></div>
+
+    <!-- Seventh section -->
+    <div class="seven">
+        <div class="bg-color">
+            <p>Remember, untreated hearing loss can contribute to cognitive decline.</p>
+            <button type="button" onclick="location.href='search.html'">FIND AN AUDIOLOGIST TODAY!</button>
+        </div>
+    </div>
+    l̥<div class="clear"></div>
+
+    <!-- Eight section -->
+    <footer>
+
+        <div class="logo-sec">
+            <div class="earbrain-logo">
+                <img src="web13/Ear Brain Health Logo.png" alt="EarBrain-img">
+            </div>
+        </div>
+
+        <div class="logo-social">
+            <p class="content">1. Journal of the American Geriatrics Society, Longitudinal Relationship Between Hearing Aid Use 
+                and Cognitive Function in Older Americans.<br>
+                2.World Health Organization, Risk Reduction of Cognitive Decline and Dementia, WHO Guidelines 2019.<br>
+                3.Livingston G, Sommerlad A, Orgeta V et al. Dementia prevention, intervention, and care. Lancet 2017;390:2673–2734.<br>
+                4.ACTA, Otorhinolaryngologica Italica, A review of new insights on the association between hearing loss and cognitive 
+                decline in aging, 2016.<br>
+                5.Acoustical Society of America (ASA); University of Colorado; <a href="https://www.hearingreview.com/inside-hearing/research/researchers-discover-brain-reorganizes-hearing-loss">
+                https://www.hearingreview.com/inside-hearing/research/researchers-discover-brain-reorganizes-hearing-loss</a>
+                </p>
+
+            <h3>Sponsored by</h3>
+            <img class="cog-img" src="web13/Asset 3.png">
+
+            <div class="footer-logo">
+              <div class="fda-img">
+                <img src="images/logo-fda.png">
+              </div>
+
+            
+                <div class="social-icon">
+                  
+                  
+                    <a href="https://www.facebook.com" class="facebook" target="_facbook">
+                      <li><i class="fab fa-facebook" id="facebook"></i></li>
+                    </a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2F13.233.244.6%2F" class="linkedin" target="_linkedin">
+                      <li><i class="fab fa-linkedin"></i></li>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2F13.233.244.6%2F&text=earbrain.com" class="twitter" target="_twitter">
+                      <li><i class="fab fa-twitter"></i></li>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone&text=earbrain.com+http%3A%2F%2F13.233.244.6%2F&app_absent=0" class="whatsapp" target="_whatsapp">
+                      <li><i class="fab fa-whatsapp"></i></li>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+    l̥<div class="clear"></div>
+
+
+
+    <script>
+      $(".modal-video-eg").modalVideo();
+    </script>
+    <script src="js/jquery-modal-video.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>

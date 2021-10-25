@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <!-- link for favicon-->
+    <link rel="icon" href="web13/Ear Brain Health Logo.png">
+
+    <!-- link for css-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div>
+        <div class="search-form">
+            <div class="zip">
+                <input id="zip" type="text" class="postal-code" maxlength="6" placeholder="ZIP/ Postal Code">
+                <!--    -->
+            </div>
+
+            <div class="or">
+                <p>----------------- OR ------------------</p>
+            </div>
+            <div class="drop-down">
+                <div class="country" id="country">
+                    <span>Select</span>
+                    <p id="countryBtn">Country</p>
+                    <!-- <details ontoggle="testToggle()"></details> -->
+                    <!-- <select class="country-drop-down countryList" id="country-drop-down"> -->
+                        <!-- onchange="showDropDown(this.id, 'select2')">-->
+                    <div id="showCountry">
+                        <input type="text" name="" id="countryList" placeholder="Search.."></input>
+                        <option value="USA">USA</option>
+                        <option value="CANADA">CANADA</option>
+                    
+                    </div>
+                    <!-- </select> -->
+                </div>
+                <div class="state" id="state">
+                    <span>Select</span>
+                    <p id="stateBtn">State/ Province</p>
+                    <!-- <select class="state-drop-down stateList" id="state-drop-down"> -->
+                        <!-- canadaian countries -->
+                        <!-- <option value="USA">AB - Albreta</option>
+                        <option value="CANADA">BC-British Columbia</option>
+                        <option value="Manitoba">MB-Manitoba</option>
+                        <option value="New Brunswick">NB-New Brunswick</option>
+                        <option value="Newfoundland and Labrador">NL-Newfoundland and Labrador</option>
+                        <option value="Northwest Territories">NT-Northwest Territories</option>
+                        <option value="Nova Scotia">NS-Nova Scotia</option>
+                        <option value="Nunavut">NU-Nunavut</option>
+                        <option value="Ontario">ON-Ontario</option>
+                        <option value="Prince Edward Island">PE-Prince Edward Island</option>
+                        <option value="Quebec">QC-Quebec</option>
+                        <option value="Saskatchewan">SK-Saskatchewan</option>
+                        <option value="Yukon Territory">YT-Yukon Territory</option> -->
+
+                    <!-- </select> -->
+                </div>
+                <div class="city" id="city">
+                    <span>Select</span>
+                    <p id="cityBtn">City</p>
+                    <br>
+                    <!-- <select class="city-drop-down cityList" id="city-drop-down"> -->
+                        <!-- <option value="Abee">Abee</option>
+                        <option value="Aacadia Valley">Aacadia Valley</option>
+                        <option value="Acheson">Acheson</option>
+                        <option value="Acme">Acme</option>
+                        <option value="Aden">Aden</option>
+                        <option value="Airdrie">Airdrie</option>
+                        <option value="Alberta Beach">Alberta Beach</option>
+                        <option value="Alcomdale">Alcomdale</option>
+                        <option value="Anzec">Anzec</option>
+                        <option value="Arrowwood">Arrowwood</option> -->
+                    <!-- </select> -->
+                </div>
+            </div>
+            <div class="or">
+                <p>----------------- OR ------------------</p>
+            </div>
+
+            <div class="gps" id="searchGps">
+                <img src="images/CurrentLocation.svg">
+                <p>AROUND MY CURRENT LOCATION</p>
+                <input type="checkbox" class="checkbox">
+                <span class="if-ticked"></span>
+
+            </div>
+        </div>
+
+        <div class="search">
+            <button>
+                FIND AN AUDIOLOGIST
+            </button>
+        </div>
+    </div>
+
+    <script src="js/search.js"></script>
+
+
+
+    <!-- <script>
+        function showDropDown(s1, s2) {
+            var s1 = document.getElementById("country-drop-down");
+            var s2 = document.getElementById("state-drop-down");
+
+            if(s1.value == 'USA')
+            {
+                var optionArray = ['U','S','A'];
+            }
+            else if(s1.value == 'CANADA')
+            {
+                var optionArray = ['C','A','N','A','D','A'];
+            }
+
+            for(var option in optionArray)
+            {
+                var pair = optionArray[option].split("|");
+                var newOption = document.createElement("option");
+
+                newOption.value = pair[0];
+                newOption.innerHTML = pair[0];
+                s2.option.add(newOption);
+            }
+        }
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
